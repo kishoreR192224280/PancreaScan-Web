@@ -22,6 +22,11 @@ interface ScanRecord {
   timestamp: string;
   image?: string; // base64 image data from DB
   box?: { left: number; top: number; right: number; bottom: number };
+  box_left?: string | number;
+  box_top?: string | number;
+  box_right?: string | number;
+  box_bottom?: string | number;
+  feedback_submitted?: boolean;
 }
 
 // CountUp Component for stats card animated counting
@@ -385,8 +390,10 @@ function App() {
     }, 4000);
   };
 
-  
-
+  const handleStatCardClick = (type: 'Normal' | 'Abnormal') => {
+    setFilterType(type);
+    setDashboardSubView('history');
+  };
   // Helper to shake fields on validation errors
   const triggerShake = (fieldKey: string) => {
     setShakeFields((prev) => ({ ...prev, [fieldKey]: true }));
