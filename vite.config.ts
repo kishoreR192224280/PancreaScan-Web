@@ -7,9 +7,12 @@ const mimeFixPlugin = {
   configureServer(server: any) {
     server.middlewares.use((req: any, res: any, next: any) => {
       const url = req.url || '';
-      if (url.includes('.wasm')) {
+      const pathname = url.split('?')[0];
+      if (pathname.endsWith('.wasm')) {
         res.setHeader('Content-Type', 'application/wasm');
-      } else if (url.includes('ort-wasm') && url.endsWith('.js')) {
+      } else if (pathname.endsWith('.js') || pathname.endsWith('.mjs')) {
+        res.setHeader('Content-Type', 'application/javascript');
+      } else if (pathname.endsWith('.ts') || pathname.endsWith('.tsx')) {
         res.setHeader('Content-Type', 'application/javascript');
       }
       next();
