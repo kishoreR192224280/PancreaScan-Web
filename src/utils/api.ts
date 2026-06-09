@@ -1,4 +1,5 @@
-export const API_BASE_URL = '/api/';
+// Dev: uses Vite proxy → localhost XAMPP | Production: uses Cloudflare Tunnel URL
+export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL as string;
 
 /**
  * Standard utility wrapper for posting Form Data records to sync.php or auth.php

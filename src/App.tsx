@@ -6,8 +6,8 @@ import logoImg from './assets/logo.png';
 import './App.css';
 import { ScanReport } from './components/ScanReport';
 
-// Base API URL with CORS-bypass dev-tunnel proxy fallback
-const API_BASE_URL = '/api/';
+// Base API URL: dev uses Vite proxy (localhost), production uses Cloudflare Tunnel
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL as string;
 
 interface ScanRecord {
   id: number | string;
