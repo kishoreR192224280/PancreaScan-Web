@@ -21,6 +21,7 @@ const mimeFixPlugin = {
 };
 
 export default defineConfig({
+  base: '/PancreaScan-Web/',
   plugins: [
     react(),
     mimeFixPlugin,
