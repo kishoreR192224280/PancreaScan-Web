@@ -8,7 +8,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-BASE_URL = "http://localhost:5173"
+BASE_URL = "https://kishorer192224280.github.io/PancreaScan-Web/"
 
 # ── Test credentials — update these to a real account in your local DB ───────
 TEST_EMAIL    = "testdoctor@pancreascan.com"
@@ -23,7 +23,7 @@ def login(driver, email=TEST_EMAIL, password=TEST_PASSWORD):
     # Navigate past landing
     btn = wait.until(
         EC.element_to_be_clickable(
-            (By.XPATH, "//*[contains(text(),'Get Started') or contains(text(),'Login') or contains(text(),'Sign In')]")
+            (By.XPATH, "//*[contains(text(),'Access PancreaScan')]")
         )
     )
     btn.click()
@@ -42,7 +42,7 @@ def login(driver, email=TEST_EMAIL, password=TEST_PASSWORD):
     pw_input.send_keys(password)
 
     submit = driver.find_element(
-        By.XPATH, "//button[@type='submit' or contains(text(),'Login') or contains(text(),'Sign In')]"
+        By.XPATH, "//button[@type='submit' or contains(text(),'Log In')]"
     )
     submit.click()
     time.sleep(3)

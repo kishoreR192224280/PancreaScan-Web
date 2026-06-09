@@ -10,8 +10,8 @@ from selenium.webdriver.support import expected_conditions as EC
 class TestLandingPage:
 
     def test_page_title(self, driver):
-        """Page title should contain PancreaScan."""
-        assert "PancreaScan" in driver.title
+        """Page title should contain pancreascan-web."""
+        assert "pancreascan-web" in driver.title.lower()
 
     def test_landing_page_loads(self, driver):
         """Landing page hero content should be visible."""
@@ -23,10 +23,10 @@ class TestLandingPage:
     def test_get_started_navigates_to_login(self, driver):
         """Clicking Get Started should navigate to the login view."""
         wait = WebDriverWait(driver, 15)
-        # Find the Get Started / Login button on the landing page
+        # Find the Access PancreaScan button on the landing page
         btn = wait.until(
             EC.element_to_be_clickable(
-                (By.XPATH, "//*[contains(text(),'Get Started') or contains(text(),'Login') or contains(text(),'Sign In')]")
+                (By.XPATH, "//*[contains(text(),'Access PancreaScan')]")
             )
         )
         btn.click()

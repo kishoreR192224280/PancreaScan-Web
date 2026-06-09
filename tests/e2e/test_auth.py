@@ -7,7 +7,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-BASE_URL = "http://localhost:5173"
+BASE_URL = "https://kishorer192224280.github.io/PancreaScan-Web/"
 
 # ── helpers ──────────────────────────────────────────────────────────────────
 
@@ -17,7 +17,7 @@ def navigate_to_login(driver):
     driver.get(BASE_URL)
     btn = wait.until(
         EC.element_to_be_clickable(
-            (By.XPATH, "//*[contains(text(),'Get Started') or contains(text(),'Login') or contains(text(),'Sign In')]")
+            (By.XPATH, "//*[contains(text(),'Access PancreaScan')]")
         )
     )
     btn.click()
@@ -34,7 +34,7 @@ def navigate_to_register(driver):
     wait = WebDriverWait(driver, 10)
     register_link = wait.until(
         EC.element_to_be_clickable(
-            (By.XPATH, "//*[contains(text(),'Register') or contains(text(),'Sign Up') or contains(text(),'Create')]")
+            (By.XPATH, "//*[contains(text(),'Create Account')]")
         )
     )
     register_link.click()
@@ -202,7 +202,7 @@ class TestForgotPassword:
         email_input.send_keys("nobody@unknown.com")
 
         submit = driver.find_element(
-            By.XPATH, "//button[@type='submit' or contains(text(),'Send') or contains(text(),'Submit') or contains(text(),'Verify')]"
+            By.XPATH, "//button[@type='submit' or contains(text(),'Check Email')]"
         )
         submit.click()
         time.sleep(3)

@@ -4,7 +4,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 
-BASE_URL = "http://localhost:5173"
+BASE_URL = "https://kishorer192224280.github.io/PancreaScan-Web/"
 
 @pytest.fixture(scope="session")
 def driver():
