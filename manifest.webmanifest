@@ -1,0 +1,1 @@
+{"name":"PancreaScan","short_name":"PancreaScan","description":"AI-Powered Early Detection of Pancreatic Anomalies","start_url":"/","display":"standalone","background_color":"#080C1A","theme_color":"#080C1A","lang":"en","scope":"/PancreaScan-Web/","icons":[{"src":"/logo.png","sizes":"192x192","type":"image/png"},{"src":"/logo.png","sizes":"512x512","type":"image/png"}]}
