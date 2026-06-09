@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="8" failures="13" skipped="0" tests="126" time="1443.741" timestamp="2026-06-09T21:52:51.362109+05:30" hostname="KishoreRavichandar"><testcase classname="tests.e2e.test_01_landing.TestLandingPage" name="test_page_title_matches_app_name" time="9.586" /><testcase classname="tests.e2e.test_01_landing.TestLandingPage" name="test_page_loads_successfully" time="4.917" /><testcase classname="tests.e2e.test_01_landing.TestLandingPage" name="test_brand_hero_title_pancrea_visible" time="1.638" /><testcase classname="tests.e2e.test_01_landing.TestLandingPage" name="test_brand_hero_title_scan_visible" time="1.925" /><testcase classname="tests.e2e.test_01_landing.TestLandingPage" name="test_brand_subtitle_text_visible" time="1.528" /><testcase classname="tests.e2e.test_01_landing.TestLandingPage" name="test_feature_badge_neural_network" time="2.003" /><testcase classname="tests.e2e.test_01_landing.TestLandingPage" name="test_feature_badge_privacy_first" time="1.465" /><testcase classname="tests.e2e.test_01_landing.TestLandingPage" name="test_feature_badge_offline_capable" time="1.255"><failure message="AssertionError: The 'Offline Capable' feature badge is not rendering on the landing page.&#10;assert 'Offline Capable' in 'PancreaScan\nAI-POWERED \u2022 FEDERATED LEARNING\nAI-Powered Early Detection of Pancreatic Anomalies\nAccess PancreaScan\n\U0001f535'&#10; +  where 'PancreaScan\nAI-POWERED \u2022 FEDERATED LEARNING\nAI-Powered Early Detection of Pancreatic Anomalies\nAccess PancreaScan\n\U0001f535' = &lt;test_01_landing.TestLandingPage object at 0x0000027C7F0CA450&gt;.body">tests\e2e\test_01_landing.py:70: in test_feature_badge_offline_capable
+    assert "Offline Capable" in self.body, \
+E   AssertionError: The 'Offline Capable' feature badge is not rendering on the landing page.
+E   assert 'Offline Capable' in 'PancreaScan\nAI-POWERED \u2022 FEDERATED LEARNING\nAI-Powered Early Detection of Pancreatic Anomalies\nAccess PancreaScan\n\U0001f535'
+E    +  where 'PancreaScan\nAI-POWERED \u2022 FEDERATED LEARNING\nAI-Powered Early Detection of Pancreatic Anomalies\nAccess PancreaScan\n\U0001f535' = &lt;test_01_landing.TestLandingPage object at 0x0000027C7F0CA450&gt;.body</failure></testcase><testcase classname="tests.e2e.test_01_landing.TestLandingPage" name="test_feature_badge_pdf_reports" time="1.968"><failure message="AssertionError: The 'Local PDF Reports' feature badge is missing from the landing page.&#10;assert 'Local PDF Reports' in 'PancreaScan\nAI-POWERED \u2022 FEDERATED LEARNING\nAI-Powered Early Detection of Pancreatic Anomalies\nAccess PancreaScan\n\U0001f535'&#10; +  where 'PancreaScan\nAI-POWERED \u2022 FEDERATED LEARNING\nAI-Powered Early Detection of Pancreatic Anomalies\nAccess PancreaScan\n\U0001f535' = &lt;test_01_landing.TestLandingPage object at 0x0000027C7F0CA650&gt;.body">tests\e2e\test_01_landing.py:76: in test_feature_badge_pdf_reports
+    assert "Local PDF Reports" in self.body, \
+E   AssertionError: The 'Local PDF Reports' feature badge is missing from the landing page.
+E   assert 'Local PDF Reports' in 'PancreaScan\nAI-POWERED \u2022 FEDERATED LEARNING\nAI-Powered Early Detection of Pancreatic Anomalies\nAccess PancreaScan\n\U0001f535'
+E    +  where 'PancreaScan\nAI-POWERED \u2022 FEDERATED LEARNING\nAI-Powered Early Detection of Pancreatic Anomalies\nAccess PancreaScan\n\U0001f535' = &lt;test_01_landing.TestLandingPage object at 0x0000027C7F0CA650&gt;.body</failure></testcase><testcase classname="tests.e2e.test_01_landing.TestLandingPage" name="test_feature_badge_realtime_analysis" time="1.990"><failure message="AssertionError: The 'Real-Time Analysis' feature badge is not visible on the landing page.&#10;assert 'Real-Time Analysis' in 'PancreaScan\nAI-POWERED \u2022 FEDERATED LEARNING\nPan\nAI-Powered Early Detection of Pancreatic Anomalies\n\U0001f9e0\nOn-Device Neural Network\nAccess PancreaScan\n\U0001f535'&#10; +  where 'PancreaScan\nAI-POWERED \u2022 FEDERATED LEARNING\nPan\nAI-Powered Early Detection of Pancreatic Anomalies\n\U0001f9e0\nOn-Device Neural Network\nAccess PancreaScan\n\U0001f535' = &lt;test_01_landing.TestLandingPage object at 0x0000027C7F0F8F50&gt;.body">tests\e2e\test_01_landing.py:82: in test_feature_badge_realtime_analysis
+    assert "Real-Time Analysis" in self.body, \
+E   AssertionError: The 'Real-Time Analysis' feature badge is not visible on the landing page.
+E   assert 'Real-Time Analysis' in 'PancreaScan\nAI-POWERED \u2022 FEDERATED LEARNING\nPan\nAI-Powered Early Detection of Pancreatic Anomalies\n\U0001f9e0\nOn-Device Neural Network\nAccess PancreaScan\n\U0001f535'
+E    +  where 'PancreaScan\nAI-POWERED \u2022 FEDERATED LEARNING\nPan\nAI-Powered Early Detection of Pancreatic Anomalies\n\U0001f9e0\nOn-Device Neural Network\nAccess PancreaScan\n\U0001f535' = &lt;test_01_landing.TestLandingPage object at 0x0000027C7F0F8F50&gt;.body</failure></testcase><testcase classname="tests.e2e.test_01_landing.TestLandingPage" name="test_access_pancreascan_button_is_clickable" time="1.793" /><testcase classname="tests.e2e.test_01_landing.TestLandingPage" name="test_access_button_navigates_to_login" time="5.320" /><testcase classname="tests.e2e.test_02_login.TestLoginPageElements" name="test_login_welcome_heading_visible" time="6.032" /><testcase classname="tests.e2e.test_02_login.TestLoginPageElements" name="test_login_subtitle_visible" time="3.852" /><testcase classname="tests.e2e.test_02_login.TestLoginPageElements" name="test_email_input_field_present" time="1.731" /><testcase classname="tests.e2e.test_02_login.TestLoginPageElements" name="test_password_input_field_present" time="1.786" /><testcase classname="tests.e2e.test_02_login.TestLoginPageElements" name="test_remember_me_checkbox_present" time="2.012" /><testcase classname="tests.e2e.test_02_login.TestLoginPageElements" name="test_forgot_password_link_visible" time="1.477" /><testcase classname="tests.e2e.test_02_login.TestLoginPageElements" name="test_create_account_link_visible" time="1.700" /><testcase classname="tests.e2e.test_02_login.TestLoginPageElements" name="test_login_button_present" time="1.815" /><testcase classname="tests.e2e.test_02_login.TestLoginFieldBehaviour" name="test_email_field_accepts_typed_input" time="1.463" /><testcase classname="tests.e2e.test_02_login.TestLoginFieldBehaviour" name="test_password_field_is_masked_by_default" time="1.129" /><testcase classname="tests.e2e.test_02_login.TestLoginFieldBehaviour" name="test_show_password_toggle_reveals_text" time="2.580" /><testcase classname="tests.e2e.test_02_login.TestLoginFieldBehaviour" name="test_remember_me_checkbox_is_togglable" time="6.556"><failure message="selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable&#10;  (Session info: chrome=148.0.7778.217); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception&#10;Stacktrace:&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abb7de5+14895]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abb7e50+14900]&#10;&#09;chromedriver!(No symbol) [0x7ff76a91d396]&#10;&#09;chromedriver!(No symbol) [0x7ff76a978dc4]&#10;&#09;chromedriver!(No symbol) [0x7ff76a96bce6]&#10;&#09;chromedriver!(No symbol) [0x7ff76a9a005a]&#10;&#09;chromedriver!(No symbol) [0x7ff76a96b566]&#10;&#09;chromedriver!(No symbol) [0x7ff76a9c486f]&#10;&#09;chromedriver!(No symbol) [0x7ff76a969df8]&#10;&#09;chromedriver!(No symbol) [0x7ff76a96ace3]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aeccc49+3296f9]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aec7375+323e25]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aeebc82+348732]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abd6045+32af5]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abdecec+3b79c]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abc1bc4+1e674]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abc1d54+1e804]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aba60e7+2b97]&#10;&#09;KERNEL32!BaseThreadInitThunk [0x7ffe13e0e957+17]&#10;&#09;ntdll!RtlUserThreadStart [0x7ffe14f07c1c+2c]">tests\e2e\test_02_login.py:123: in test_remember_me_checkbox_is_togglable
+    checkbox.click()
+C:\Users\USER\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\selenium\webdriver\remote\webelement.py:114: in click
+    self._execute(Command.CLICK_ELEMENT)
+C:\Users\USER\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\selenium\webdriver\remote\webelement.py:508: in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\USER\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\selenium\webdriver\remote\webdriver.py:468: in execute
+    self.error_handler.check_response(response)
+C:\Users\USER\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:232: in check_response
+    raise exception_class(message, screen, stacktrace)
+E   selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+E     (Session info: chrome=148.0.7778.217); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+E   Stacktrace:
+E   	chromedriver!GetHandleVerifier [0x7ff76abb7de5+14895]
+E   	chromedriver!GetHandleVerifier [0x7ff76abb7e50+14900]
+E   	chromedriver!(No symbol) [0x7ff76a91d396]
+E   	chromedriver!(No symbol) [0x7ff76a978dc4]
+E   	chromedriver!(No symbol) [0x7ff76a96bce6]
+E   	chromedriver!(No symbol) [0x7ff76a9a005a]
+E   	chromedriver!(No symbol) [0x7ff76a96b566]
+E   	chromedriver!(No symbol) [0x7ff76a9c486f]
+E   	chromedriver!(No symbol) [0x7ff76a969df8]
+E   	chromedriver!(No symbol) [0x7ff76a96ace3]
+E   	chromedriver!GetHandleVerifier [0x7ff76aeccc49+3296f9]
+E   	chromedriver!GetHandleVerifier [0x7ff76aec7375+323e25]
+E   	chromedriver!GetHandleVerifier [0x7ff76aeebc82+348732]
+E   	chromedriver!GetHandleVerifier [0x7ff76abd6045+32af5]
+E   	chromedriver!GetHandleVerifier [0x7ff76abdecec+3b79c]
+E   	chromedriver!GetHandleVerifier [0x7ff76abc1bc4+1e674]
+E   	chromedriver!GetHandleVerifier [0x7ff76abc1d54+1e804]
+E   	chromedriver!GetHandleVerifier [0x7ff76aba60e7+2b97]
+E   	KERNEL32!BaseThreadInitThunk [0x7ffe13e0e957+17]
+E   	ntdll!RtlUserThreadStart [0x7ffe14f07c1c+2c]</failure></testcase><testcase classname="tests.e2e.test_02_login.TestLoginValidation" name="test_wrong_credentials_shows_error_toast" time="6.125" /><testcase classname="tests.e2e.test_02_login.TestLoginValidation" name="test_forgot_password_link_navigates_to_recovery_page" time="2.684" /><testcase classname="tests.e2e.test_02_login.TestLoginValidation" name="test_create_account_link_navigates_to_register" time="2.401" /><testcase classname="tests.e2e.test_02_login.TestLoginSuccess" name="test_valid_credentials_login_reaches_dashboard" time="3.294" /><testcase classname="tests.e2e.test_02_login.TestLoginSuccess" name="test_dashboard_sidebar_visible_after_login" time="3.993" /><testcase classname="tests.e2e.test_02_login.TestLoginSuccess" name="test_dashboard_shows_username_after_login" time="5.062" /><testcase classname="tests.e2e.test_03_register.TestRegisterPageElements" name="test_register_heading_visible" time="3.125" /><testcase classname="tests.e2e.test_03_register.TestRegisterPageElements" name="test_register_subtitle_visible" time="2.502" /><testcase classname="tests.e2e.test_03_register.TestRegisterPageElements" name="test_full_name_field_present" time="3.413" /><testcase classname="tests.e2e.test_03_register.TestRegisterPageElements" name="test_register_email_field_present" time="2.972" /><testcase classname="tests.e2e.test_03_register.TestRegisterPageElements" name="test_register_password_field_present" time="3.203" /><testcase classname="tests.e2e.test_03_register.TestRegisterPageElements" name="test_confirm_password_field_present" time="3.288" /><testcase classname="tests.e2e.test_03_register.TestRegisterPageElements" name="test_create_account_button_present" time="3.281" /><testcase classname="tests.e2e.test_03_register.TestRegisterPageElements" name="test_back_to_login_link_present" time="2.991" /><testcase classname="tests.e2e.test_03_register.TestRegisterFieldBehaviour" name="test_full_name_field_accepts_text" time="3.364" /><testcase classname="tests.e2e.test_03_register.TestRegisterFieldBehaviour" name="test_register_email_accepts_input" time="3.344" /><testcase classname="tests.e2e.test_03_register.TestRegisterFieldBehaviour" name="test_register_password_is_masked" time="2.964" /><testcase classname="tests.e2e.test_03_register.TestRegisterFieldBehaviour" name="test_confirm_password_is_masked" time="2.999" /><testcase classname="tests.e2e.test_03_register.TestRegisterFieldBehaviour" name="test_back_to_login_link_navigates_to_login" time="4.374" /><testcase classname="tests.e2e.test_04_forgot_password.TestForgotPasswordPage" name="test_forgot_password_link_on_login_page_visible" time="2.903" /><testcase classname="tests.e2e.test_04_forgot_password.TestForgotPasswordPage" name="test_forgot_page_subtitle_visible" time="3.321" /><testcase classname="tests.e2e.test_04_forgot_password.TestForgotPasswordPage" name="test_forgot_email_input_present" time="2.629" /><testcase classname="tests.e2e.test_04_forgot_password.TestForgotPasswordPage" name="test_check_email_button_present" time="2.579" /><testcase classname="tests.e2e.test_04_forgot_password.TestForgotPasswordPage" name="test_back_to_login_link_present" time="2.949" /><testcase classname="tests.e2e.test_04_forgot_password.TestForgotPasswordPage" name="test_forgot_email_field_accepts_input" time="3.982" /><testcase classname="tests.e2e.test_04_forgot_password.TestForgotPasswordPage" name="test_unknown_email_shows_error_message" time="8.007" /><testcase classname="tests.e2e.test_04_forgot_password.TestForgotPasswordPage" name="test_back_to_login_navigates_to_login_screen" time="4.987" /><testcase classname="tests.e2e.test_04_forgot_password.TestForgotPasswordPage" name="test_forgot_link_reachable_from_login" time="5.859" /><testcase classname="tests.e2e.test_05_dashboard_nav.TestDashboardSidebar" name="test_dashboard_layout_present_after_login" time="6.138" /><testcase classname="tests.e2e.test_05_dashboard_nav.TestDashboardSidebar" name="test_sidebar_logo_image_visible" time="6.061" /><testcase classname="tests.e2e.test_05_dashboard_nav.TestDashboardSidebar" name="test_sidebar_brand_title_pancreascan_visible" time="6.410" /><testcase classname="tests.e2e.test_05_dashboard_nav.TestDashboardSidebar" name="test_dashboard_menu_item_present" time="5.495" /><testcase classname="tests.e2e.test_05_dashboard_nav.TestDashboardSidebar" name="test_patient_history_menu_item_present" time="5.930" /><testcase classname="tests.e2e.test_05_dashboard_nav.TestDashboardSidebar" name="test_analytics_menu_item_present" time="5.717" /><testcase classname="tests.e2e.test_05_dashboard_nav.TestDashboardSidebar" name="test_settings_menu_item_present" time="5.679" /><testcase classname="tests.e2e.test_05_dashboard_nav.TestDashboardSidebar" name="test_logout_button_in_sidebar_present" time="5.733" /><testcase classname="tests.e2e.test_05_dashboard_nav.TestDashboardTabSwitching" name="test_patient_history_tab_loads_history_view" time="6.520" /><testcase classname="tests.e2e.test_05_dashboard_nav.TestDashboardTabSwitching" name="test_analytics_tab_loads_analytics_view" time="7.337" /><testcase classname="tests.e2e.test_05_dashboard_nav.TestDashboardTabSwitching" name="test_settings_tab_loads_settings_view" time="7.692" /><testcase classname="tests.e2e.test_05_dashboard_nav.TestDashboardTabSwitching" name="test_clicking_dashboard_tab_returns_to_overview" time="8.348" /><testcase classname="tests.e2e.test_05_dashboard_nav.TestDashboardTabSwitching" name="test_history_table_column_headers_visible" time="7.189"><failure message="AssertionError: The Patient History table is missing one or more column headers (Patient ID, Patient Name, Scan Result). The history table component may have a rendering error.&#10;assert False&#10; +  where False = all(&lt;generator object TestDashboardTabSwitching.test_history_table_column_headers_visible.&lt;locals&gt;.&lt;genexpr&gt; at 0x0000027C7F233300&gt;)">tests\e2e\test_05_dashboard_nav.py:125: in test_history_table_column_headers_visible
+    assert all(col in body for col in ["Patient ID", "Patient Name", "Scan Result"]), \
+E   AssertionError: The Patient History table is missing one or more column headers (Patient ID, Patient Name, Scan Result). The history table component may have a rendering error.
+E   assert False
+E    +  where False = all(&lt;generator object TestDashboardTabSwitching.test_history_table_column_headers_visible.&lt;locals&gt;.&lt;genexpr&gt; at 0x0000027C7F233300&gt;)</failure></testcase><testcase classname="tests.e2e.test_06_dashboard_stats.TestDashboardStats" name="test_total_scans_stat_card_visible" time="8.017" /><testcase classname="tests.e2e.test_06_dashboard_stats.TestDashboardStats" name="test_normal_scans_stat_card_visible" time="7.475" /><testcase classname="tests.e2e.test_06_dashboard_stats.TestDashboardStats" name="test_abnormal_scans_stat_card_visible" time="6.646" /><testcase classname="tests.e2e.test_06_dashboard_stats.TestDashboardStats" name="test_select_ct_scan_button_visible" time="6.694" /><testcase classname="tests.e2e.test_06_dashboard_stats.TestDashboardStats" name="test_file_input_element_exists_in_dom" time="7.292" /><testcase classname="tests.e2e.test_06_dashboard_stats.TestDashboardStats" name="test_stat_cards_have_trend_icons" time="7.062" /><testcase classname="tests.e2e.test_06_dashboard_stats.TestDashboardStats" name="test_normal_stat_card_click_filters_to_normal" time="10.321" /><testcase classname="tests.e2e.test_06_dashboard_stats.TestDashboardStats" name="test_abnormal_stat_card_click_filters_to_abnormal" time="10.196" /><testcase classname="tests.e2e.test_06_dashboard_stats.TestDashboardStats" name="test_all_scans_filter_resets_to_all" time="9.462" /><testcase classname="tests.e2e.test_07_upload_workspace.TestWorkspaceModalElements" name="test_workspace_modal_opens_after_upload" time="8.245" /><testcase classname="tests.e2e.test_07_upload_workspace.TestWorkspaceModalElements" name="test_workspace_modal_title_visible" time="7.848" /><testcase classname="tests.e2e.test_07_upload_workspace.TestWorkspaceModalElements" name="test_uploaded_ct_image_preview_shown" time="8.399" /><testcase classname="tests.e2e.test_07_upload_workspace.TestWorkspaceModalElements" name="test_close_button_present_in_modal" time="8.640" /><testcase classname="tests.e2e.test_07_upload_workspace.TestWorkspaceModalElements" name="test_patient_id_input_present_in_modal" time="8.270" /><testcase classname="tests.e2e.test_07_upload_workspace.TestWorkspaceModalElements" name="test_patient_name_input_present_in_modal" time="8.250" /><testcase classname="tests.e2e.test_07_upload_workspace.TestWorkspaceModalElements" name="test_run_tflite_inference_button_present" time="9.044" /><testcase classname="tests.e2e.test_07_upload_workspace.TestWorkspaceModalElements" name="test_patient_id_field_accepts_text" time="8.865" /><testcase classname="tests.e2e.test_07_upload_workspace.TestWorkspaceModalElements" name="test_patient_name_field_accepts_text" time="8.330" /><testcase classname="tests.e2e.test_07_upload_workspace.TestWorkspaceModalElements" name="test_close_button_dismisses_modal" time="14.828" /><testcase classname="tests.e2e.test_07_upload_workspace.TestWorkspaceInference" name="test_run_inference_starts_scanning_animation" time="10.131" /><testcase classname="tests.e2e.test_07_upload_workspace.TestWorkspaceInference" name="test_inference_produces_yolov8_label" time="70.666"><failure message="selenium.common.exceptions.TimeoutException: Message: &#10;Stacktrace:&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abb7de5+14895]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abb7e50+14900]&#10;&#09;chromedriver!(No symbol) [0x7ff76a91d5ad]&#10;&#09;chromedriver!(No symbol) [0x7ff76a977822]&#10;&#09;chromedriver!(No symbol) [0x7ff76a977b2c]&#10;&#09;chromedriver!(No symbol) [0x7ff76a9c7d17]&#10;&#09;chromedriver!(No symbol) [0x7ff76a9c486f]&#10;&#09;chromedriver!(No symbol) [0x7ff76a969df8]&#10;&#09;chromedriver!(No symbol) [0x7ff76a96ace3]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aeccc49+3296f9]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aec7375+323e25]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aeebc82+348732]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abd6045+32af5]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abdecec+3b79c]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abc1bc4+1e674]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abc1d54+1e804]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aba60e7+2b97]&#10;&#09;KERNEL32!BaseThreadInitThunk [0x7ffe13e0e957+17]&#10;&#09;ntdll!RtlUserThreadStart [0x7ffe14f07c1c+2c]">tests\e2e\test_07_upload_workspace.py:157: in test_inference_produces_yolov8_label
+    label = WebDriverWait(self.driver, 60).until(
+C:\Users\USER\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\selenium\webdriver\support\wait.py:121: in until
+    raise TimeoutException(message, screen, stacktrace)
+E   selenium.common.exceptions.TimeoutException: Message: 
+E   Stacktrace:
+E   	chromedriver!GetHandleVerifier [0x7ff76abb7de5+14895]
+E   	chromedriver!GetHandleVerifier [0x7ff76abb7e50+14900]
+E   	chromedriver!(No symbol) [0x7ff76a91d5ad]
+E   	chromedriver!(No symbol) [0x7ff76a977822]
+E   	chromedriver!(No symbol) [0x7ff76a977b2c]
+E   	chromedriver!(No symbol) [0x7ff76a9c7d17]
+E   	chromedriver!(No symbol) [0x7ff76a9c486f]
+E   	chromedriver!(No symbol) [0x7ff76a969df8]
+E   	chromedriver!(No symbol) [0x7ff76a96ace3]
+E   	chromedriver!GetHandleVerifier [0x7ff76aeccc49+3296f9]
+E   	chromedriver!GetHandleVerifier [0x7ff76aec7375+323e25]
+E   	chromedriver!GetHandleVerifier [0x7ff76aeebc82+348732]
+E   	chromedriver!GetHandleVerifier [0x7ff76abd6045+32af5]
+E   	chromedriver!GetHandleVerifier [0x7ff76abdecec+3b79c]
+E   	chromedriver!GetHandleVerifier [0x7ff76abc1bc4+1e674]
+E   	chromedriver!GetHandleVerifier [0x7ff76abc1d54+1e804]
+E   	chromedriver!GetHandleVerifier [0x7ff76aba60e7+2b97]
+E   	KERNEL32!BaseThreadInitThunk [0x7ffe13e0e957+17]
+E   	ntdll!RtlUserThreadStart [0x7ffe14f07c1c+2c]</failure></testcase><testcase classname="tests.e2e.test_07_upload_workspace.TestWorkspaceInference" name="test_inference_shows_confidence_score" time="69.758"><failure message="selenium.common.exceptions.TimeoutException: Message: &#10;Stacktrace:&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abb7de5+14895]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abb7e50+14900]&#10;&#09;chromedriver!(No symbol) [0x7ff76a91d5ad]&#10;&#09;chromedriver!(No symbol) [0x7ff76a977822]&#10;&#09;chromedriver!(No symbol) [0x7ff76a977b2c]&#10;&#09;chromedriver!(No symbol) [0x7ff76a9c7d17]&#10;&#09;chromedriver!(No symbol) [0x7ff76a9c486f]&#10;&#09;chromedriver!(No symbol) [0x7ff76a969df8]&#10;&#09;chromedriver!(No symbol) [0x7ff76a96ace3]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aeccc49+3296f9]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aec7375+323e25]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aeebc82+348732]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abd6045+32af5]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abdecec+3b79c]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abc1bc4+1e674]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abc1d54+1e804]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aba60e7+2b97]&#10;&#09;KERNEL32!BaseThreadInitThunk [0x7ffe13e0e957+17]&#10;&#09;ntdll!RtlUserThreadStart [0x7ffe14f07c1c+2c]">tests\e2e\test_07_upload_workspace.py:179: in test_inference_shows_confidence_score
+    WebDriverWait(self.driver, 60).until(
+C:\Users\USER\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\selenium\webdriver\support\wait.py:121: in until
+    raise TimeoutException(message, screen, stacktrace)
+E   selenium.common.exceptions.TimeoutException: Message: 
+E   Stacktrace:
+E   	chromedriver!GetHandleVerifier [0x7ff76abb7de5+14895]
+E   	chromedriver!GetHandleVerifier [0x7ff76abb7e50+14900]
+E   	chromedriver!(No symbol) [0x7ff76a91d5ad]
+E   	chromedriver!(No symbol) [0x7ff76a977822]
+E   	chromedriver!(No symbol) [0x7ff76a977b2c]
+E   	chromedriver!(No symbol) [0x7ff76a9c7d17]
+E   	chromedriver!(No symbol) [0x7ff76a9c486f]
+E   	chromedriver!(No symbol) [0x7ff76a969df8]
+E   	chromedriver!(No symbol) [0x7ff76a96ace3]
+E   	chromedriver!GetHandleVerifier [0x7ff76aeccc49+3296f9]
+E   	chromedriver!GetHandleVerifier [0x7ff76aec7375+323e25]
+E   	chromedriver!GetHandleVerifier [0x7ff76aeebc82+348732]
+E   	chromedriver!GetHandleVerifier [0x7ff76abd6045+32af5]
+E   	chromedriver!GetHandleVerifier [0x7ff76abdecec+3b79c]
+E   	chromedriver!GetHandleVerifier [0x7ff76abc1bc4+1e674]
+E   	chromedriver!GetHandleVerifier [0x7ff76abc1d54+1e804]
+E   	chromedriver!GetHandleVerifier [0x7ff76aba60e7+2b97]
+E   	KERNEL32!BaseThreadInitThunk [0x7ffe13e0e957+17]
+E   	ntdll!RtlUserThreadStart [0x7ffe14f07c1c+2c]</failure></testcase><testcase classname="tests.e2e.test_07_upload_workspace.TestWorkspaceInference" name="test_inference_shows_rescan_and_sync_buttons" time="70.857"><failure message="selenium.common.exceptions.TimeoutException: Message: &#10;Stacktrace:&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abb7de5+14895]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abb7e50+14900]&#10;&#09;chromedriver!(No symbol) [0x7ff76a91d5ad]&#10;&#09;chromedriver!(No symbol) [0x7ff76a977822]&#10;&#09;chromedriver!(No symbol) [0x7ff76a977b2c]&#10;&#09;chromedriver!(No symbol) [0x7ff76a9c7d17]&#10;&#09;chromedriver!(No symbol) [0x7ff76a9c486f]&#10;&#09;chromedriver!(No symbol) [0x7ff76a969df8]&#10;&#09;chromedriver!(No symbol) [0x7ff76a96ace3]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aeccc49+3296f9]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aec7375+323e25]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aeebc82+348732]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abd6045+32af5]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abdecec+3b79c]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abc1bc4+1e674]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abc1d54+1e804]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aba60e7+2b97]&#10;&#09;KERNEL32!BaseThreadInitThunk [0x7ffe13e0e957+17]&#10;&#09;ntdll!RtlUserThreadStart [0x7ffe14f07c1c+2c]">tests\e2e\test_07_upload_workspace.py:202: in test_inference_shows_rescan_and_sync_buttons
+    WebDriverWait(self.driver, 60).until(
+C:\Users\USER\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\selenium\webdriver\support\wait.py:121: in until
+    raise TimeoutException(message, screen, stacktrace)
+E   selenium.common.exceptions.TimeoutException: Message: 
+E   Stacktrace:
+E   	chromedriver!GetHandleVerifier [0x7ff76abb7de5+14895]
+E   	chromedriver!GetHandleVerifier [0x7ff76abb7e50+14900]
+E   	chromedriver!(No symbol) [0x7ff76a91d5ad]
+E   	chromedriver!(No symbol) [0x7ff76a977822]
+E   	chromedriver!(No symbol) [0x7ff76a977b2c]
+E   	chromedriver!(No symbol) [0x7ff76a9c7d17]
+E   	chromedriver!(No symbol) [0x7ff76a9c486f]
+E   	chromedriver!(No symbol) [0x7ff76a969df8]
+E   	chromedriver!(No symbol) [0x7ff76a96ace3]
+E   	chromedriver!GetHandleVerifier [0x7ff76aeccc49+3296f9]
+E   	chromedriver!GetHandleVerifier [0x7ff76aec7375+323e25]
+E   	chromedriver!GetHandleVerifier [0x7ff76aeebc82+348732]
+E   	chromedriver!GetHandleVerifier [0x7ff76abd6045+32af5]
+E   	chromedriver!GetHandleVerifier [0x7ff76abdecec+3b79c]
+E   	chromedriver!GetHandleVerifier [0x7ff76abc1bc4+1e674]
+E   	chromedriver!GetHandleVerifier [0x7ff76abc1d54+1e804]
+E   	chromedriver!GetHandleVerifier [0x7ff76aba60e7+2b97]
+E   	KERNEL32!BaseThreadInitThunk [0x7ffe13e0e957+17]
+E   	ntdll!RtlUserThreadStart [0x7ffe14f07c1c+2c]</failure></testcase><testcase classname="tests.e2e.test_08_scan_report.TestScanReport" name="test_diagnostic_report_opens_after_sync" time="70.030"><error message="failed on setup with &quot;selenium.common.exceptions.TimeoutException: Message: &#10;Stacktrace:&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abb7de5+14895]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abb7e50+14900]&#10;&#09;chromedriver!(No symbol) [0x7ff76a91d5ad]&#10;&#09;chromedriver!(No symbol) [0x7ff76a977822]&#10;&#09;chromedriver!(No symbol) [0x7ff76a977b2c]&#10;&#09;chromedriver!(No symbol) [0x7ff76a9c7d17]&#10;&#09;chromedriver!(No symbol) [0x7ff76a9c486f]&#10;&#09;chromedriver!(No symbol) [0x7ff76a969df8]&#10;&#09;chromedriver!(No symbol) [0x7ff76a96ace3]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aeccc49+3296f9]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aec7375+323e25]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aeebc82+348732]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abd6045+32af5]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abdecec+3b79c]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abc1bc4+1e674]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abc1d54+1e804]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aba60e7+2b97]&#10;&#09;KERNEL32!BaseThreadInitThunk [0x7ffe13e0e957+17]&#10;&#09;ntdll!RtlUserThreadStart [0x7ffe14f07c1c+2c]&quot;">tests\e2e\test_08_scan_report.py:45: in setup
+    run_full_analysis_and_sync(driver)
+tests\e2e\test_08_scan_report.py:34: in run_full_analysis_and_sync
+    sync_btn = wait.until(EC.element_to_be_clickable(
+C:\Users\USER\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\selenium\webdriver\support\wait.py:121: in until
+    raise TimeoutException(message, screen, stacktrace)
+E   selenium.common.exceptions.TimeoutException: Message: 
+E   Stacktrace:
+E   	chromedriver!GetHandleVerifier [0x7ff76abb7de5+14895]
+E   	chromedriver!GetHandleVerifier [0x7ff76abb7e50+14900]
+E   	chromedriver!(No symbol) [0x7ff76a91d5ad]
+E   	chromedriver!(No symbol) [0x7ff76a977822]
+E   	chromedriver!(No symbol) [0x7ff76a977b2c]
+E   	chromedriver!(No symbol) [0x7ff76a9c7d17]
+E   	chromedriver!(No symbol) [0x7ff76a9c486f]
+E   	chromedriver!(No symbol) [0x7ff76a969df8]
+E   	chromedriver!(No symbol) [0x7ff76a96ace3]
+E   	chromedriver!GetHandleVerifier [0x7ff76aeccc49+3296f9]
+E   	chromedriver!GetHandleVerifier [0x7ff76aec7375+323e25]
+E   	chromedriver!GetHandleVerifier [0x7ff76aeebc82+348732]
+E   	chromedriver!GetHandleVerifier [0x7ff76abd6045+32af5]
+E   	chromedriver!GetHandleVerifier [0x7ff76abdecec+3b79c]
+E   	chromedriver!GetHandleVerifier [0x7ff76abc1bc4+1e674]
+E   	chromedriver!GetHandleVerifier [0x7ff76abc1d54+1e804]
+E   	chromedriver!GetHandleVerifier [0x7ff76aba60e7+2b97]
+E   	KERNEL32!BaseThreadInitThunk [0x7ffe13e0e957+17]
+E   	ntdll!RtlUserThreadStart [0x7ffe14f07c1c+2c]</error></testcase><testcase classname="tests.e2e.test_08_scan_report.TestScanReport" name="test_report_heading_visible" time="70.966"><error message="failed on setup with &quot;selenium.common.exceptions.TimeoutException: Message: &#10;Stacktrace:&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abb7de5+14895]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abb7e50+14900]&#10;&#09;chromedriver!(No symbol) [0x7ff76a91d5ad]&#10;&#09;chromedriver!(No symbol) [0x7ff76a977822]&#10;&#09;chromedriver!(No symbol) [0x7ff76a977b2c]&#10;&#09;chromedriver!(No symbol) [0x7ff76a9c7d17]&#10;&#09;chromedriver!(No symbol) [0x7ff76a9c486f]&#10;&#09;chromedriver!(No symbol) [0x7ff76a969df8]&#10;&#09;chromedriver!(No symbol) [0x7ff76a96ace3]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aeccc49+3296f9]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aec7375+323e25]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aeebc82+348732]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abd6045+32af5]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abdecec+3b79c]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abc1bc4+1e674]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abc1d54+1e804]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aba60e7+2b97]&#10;&#09;KERNEL32!BaseThreadInitThunk [0x7ffe13e0e957+17]&#10;&#09;ntdll!RtlUserThreadStart [0x7ffe14f07c1c+2c]&quot;">tests\e2e\test_08_scan_report.py:45: in setup
+    run_full_analysis_and_sync(driver)
+tests\e2e\test_08_scan_report.py:34: in run_full_analysis_and_sync
+    sync_btn = wait.until(EC.element_to_be_clickable(
+C:\Users\USER\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\selenium\webdriver\support\wait.py:121: in until
+    raise TimeoutException(message, screen, stacktrace)
+E   selenium.common.exceptions.TimeoutException: Message: 
+E   Stacktrace:
+E   	chromedriver!GetHandleVerifier [0x7ff76abb7de5+14895]
+E   	chromedriver!GetHandleVerifier [0x7ff76abb7e50+14900]
+E   	chromedriver!(No symbol) [0x7ff76a91d5ad]
+E   	chromedriver!(No symbol) [0x7ff76a977822]
+E   	chromedriver!(No symbol) [0x7ff76a977b2c]
+E   	chromedriver!(No symbol) [0x7ff76a9c7d17]
+E   	chromedriver!(No symbol) [0x7ff76a9c486f]
+E   	chromedriver!(No symbol) [0x7ff76a969df8]
+E   	chromedriver!(No symbol) [0x7ff76a96ace3]
+E   	chromedriver!GetHandleVerifier [0x7ff76aeccc49+3296f9]
+E   	chromedriver!GetHandleVerifier [0x7ff76aec7375+323e25]
+E   	chromedriver!GetHandleVerifier [0x7ff76aeebc82+348732]
+E   	chromedriver!GetHandleVerifier [0x7ff76abd6045+32af5]
+E   	chromedriver!GetHandleVerifier [0x7ff76abdecec+3b79c]
+E   	chromedriver!GetHandleVerifier [0x7ff76abc1bc4+1e674]
+E   	chromedriver!GetHandleVerifier [0x7ff76abc1d54+1e804]
+E   	chromedriver!GetHandleVerifier [0x7ff76aba60e7+2b97]
+E   	KERNEL32!BaseThreadInitThunk [0x7ffe13e0e957+17]
+E   	ntdll!RtlUserThreadStart [0x7ffe14f07c1c+2c]</error></testcase><testcase classname="tests.e2e.test_08_scan_report.TestScanReport" name="test_report_patient_information_section_visible" time="71.709"><error message="failed on setup with &quot;selenium.common.exceptions.TimeoutException: Message: &#10;Stacktrace:&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abb7de5+14895]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abb7e50+14900]&#10;&#09;chromedriver!(No symbol) [0x7ff76a91d5ad]&#10;&#09;chromedriver!(No symbol) [0x7ff76a977822]&#10;&#09;chromedriver!(No symbol) [0x7ff76a977b2c]&#10;&#09;chromedriver!(No symbol) [0x7ff76a9c7d17]&#10;&#09;chromedriver!(No symbol) [0x7ff76a9c486f]&#10;&#09;chromedriver!(No symbol) [0x7ff76a969df8]&#10;&#09;chromedriver!(No symbol) [0x7ff76a96ace3]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aeccc49+3296f9]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aec7375+323e25]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aeebc82+348732]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abd6045+32af5]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abdecec+3b79c]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abc1bc4+1e674]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abc1d54+1e804]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aba60e7+2b97]&#10;&#09;KERNEL32!BaseThreadInitThunk [0x7ffe13e0e957+17]&#10;&#09;ntdll!RtlUserThreadStart [0x7ffe14f07c1c+2c]&quot;">tests\e2e\test_08_scan_report.py:45: in setup
+    run_full_analysis_and_sync(driver)
+tests\e2e\test_08_scan_report.py:34: in run_full_analysis_and_sync
+    sync_btn = wait.until(EC.element_to_be_clickable(
+C:\Users\USER\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\selenium\webdriver\support\wait.py:121: in until
+    raise TimeoutException(message, screen, stacktrace)
+E   selenium.common.exceptions.TimeoutException: Message: 
+E   Stacktrace:
+E   	chromedriver!GetHandleVerifier [0x7ff76abb7de5+14895]
+E   	chromedriver!GetHandleVerifier [0x7ff76abb7e50+14900]
+E   	chromedriver!(No symbol) [0x7ff76a91d5ad]
+E   	chromedriver!(No symbol) [0x7ff76a977822]
+E   	chromedriver!(No symbol) [0x7ff76a977b2c]
+E   	chromedriver!(No symbol) [0x7ff76a9c7d17]
+E   	chromedriver!(No symbol) [0x7ff76a9c486f]
+E   	chromedriver!(No symbol) [0x7ff76a969df8]
+E   	chromedriver!(No symbol) [0x7ff76a96ace3]
+E   	chromedriver!GetHandleVerifier [0x7ff76aeccc49+3296f9]
+E   	chromedriver!GetHandleVerifier [0x7ff76aec7375+323e25]
+E   	chromedriver!GetHandleVerifier [0x7ff76aeebc82+348732]
+E   	chromedriver!GetHandleVerifier [0x7ff76abd6045+32af5]
+E   	chromedriver!GetHandleVerifier [0x7ff76abdecec+3b79c]
+E   	chromedriver!GetHandleVerifier [0x7ff76abc1bc4+1e674]
+E   	chromedriver!GetHandleVerifier [0x7ff76abc1d54+1e804]
+E   	chromedriver!GetHandleVerifier [0x7ff76aba60e7+2b97]
+E   	KERNEL32!BaseThreadInitThunk [0x7ffe13e0e957+17]
+E   	ntdll!RtlUserThreadStart [0x7ffe14f07c1c+2c]</error></testcase><testcase classname="tests.e2e.test_08_scan_report.TestScanReport" name="test_report_shows_patient_id" time="69.512"><error message="failed on setup with &quot;selenium.common.exceptions.TimeoutException: Message: &#10;Stacktrace:&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abb7de5+14895]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abb7e50+14900]&#10;&#09;chromedriver!(No symbol) [0x7ff76a91d5ad]&#10;&#09;chromedriver!(No symbol) [0x7ff76a977822]&#10;&#09;chromedriver!(No symbol) [0x7ff76a977b2c]&#10;&#09;chromedriver!(No symbol) [0x7ff76a9c7d17]&#10;&#09;chromedriver!(No symbol) [0x7ff76a9c486f]&#10;&#09;chromedriver!(No symbol) [0x7ff76a969df8]&#10;&#09;chromedriver!(No symbol) [0x7ff76a96ace3]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aeccc49+3296f9]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aec7375+323e25]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aeebc82+348732]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abd6045+32af5]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abdecec+3b79c]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abc1bc4+1e674]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abc1d54+1e804]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aba60e7+2b97]&#10;&#09;KERNEL32!BaseThreadInitThunk [0x7ffe13e0e957+17]&#10;&#09;ntdll!RtlUserThreadStart [0x7ffe14f07c1c+2c]&quot;">tests\e2e\test_08_scan_report.py:45: in setup
+    run_full_analysis_and_sync(driver)
+tests\e2e\test_08_scan_report.py:34: in run_full_analysis_and_sync
+    sync_btn = wait.until(EC.element_to_be_clickable(
+C:\Users\USER\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\selenium\webdriver\support\wait.py:121: in until
+    raise TimeoutException(message, screen, stacktrace)
+E   selenium.common.exceptions.TimeoutException: Message: 
+E   Stacktrace:
+E   	chromedriver!GetHandleVerifier [0x7ff76abb7de5+14895]
+E   	chromedriver!GetHandleVerifier [0x7ff76abb7e50+14900]
+E   	chromedriver!(No symbol) [0x7ff76a91d5ad]
+E   	chromedriver!(No symbol) [0x7ff76a977822]
+E   	chromedriver!(No symbol) [0x7ff76a977b2c]
+E   	chromedriver!(No symbol) [0x7ff76a9c7d17]
+E   	chromedriver!(No symbol) [0x7ff76a9c486f]
+E   	chromedriver!(No symbol) [0x7ff76a969df8]
+E   	chromedriver!(No symbol) [0x7ff76a96ace3]
+E   	chromedriver!GetHandleVerifier [0x7ff76aeccc49+3296f9]
+E   	chromedriver!GetHandleVerifier [0x7ff76aec7375+323e25]
+E   	chromedriver!GetHandleVerifier [0x7ff76aeebc82+348732]
+E   	chromedriver!GetHandleVerifier [0x7ff76abd6045+32af5]
+E   	chromedriver!GetHandleVerifier [0x7ff76abdecec+3b79c]
+E   	chromedriver!GetHandleVerifier [0x7ff76abc1bc4+1e674]
+E   	chromedriver!GetHandleVerifier [0x7ff76abc1d54+1e804]
+E   	chromedriver!GetHandleVerifier [0x7ff76aba60e7+2b97]
+E   	KERNEL32!BaseThreadInitThunk [0x7ffe13e0e957+17]
+E   	ntdll!RtlUserThreadStart [0x7ffe14f07c1c+2c]</error></testcase><testcase classname="tests.e2e.test_08_scan_report.TestScanReport" name="test_report_shows_patient_name" time="70.566"><error message="failed on setup with &quot;selenium.common.exceptions.TimeoutException: Message: &#10;Stacktrace:&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abb7de5+14895]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abb7e50+14900]&#10;&#09;chromedriver!(No symbol) [0x7ff76a91d5ad]&#10;&#09;chromedriver!(No symbol) [0x7ff76a977822]&#10;&#09;chromedriver!(No symbol) [0x7ff76a977b2c]&#10;&#09;chromedriver!(No symbol) [0x7ff76a9c7d17]&#10;&#09;chromedriver!(No symbol) [0x7ff76a9c486f]&#10;&#09;chromedriver!(No symbol) [0x7ff76a969df8]&#10;&#09;chromedriver!(No symbol) [0x7ff76a96ace3]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aeccc49+3296f9]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aec7375+323e25]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aeebc82+348732]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abd6045+32af5]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abdecec+3b79c]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abc1bc4+1e674]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abc1d54+1e804]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aba60e7+2b97]&#10;&#09;KERNEL32!BaseThreadInitThunk [0x7ffe13e0e957+17]&#10;&#09;ntdll!RtlUserThreadStart [0x7ffe14f07c1c+2c]&quot;">tests\e2e\test_08_scan_report.py:45: in setup
+    run_full_analysis_and_sync(driver)
+tests\e2e\test_08_scan_report.py:34: in run_full_analysis_and_sync
+    sync_btn = wait.until(EC.element_to_be_clickable(
+C:\Users\USER\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\selenium\webdriver\support\wait.py:121: in until
+    raise TimeoutException(message, screen, stacktrace)
+E   selenium.common.exceptions.TimeoutException: Message: 
+E   Stacktrace:
+E   	chromedriver!GetHandleVerifier [0x7ff76abb7de5+14895]
+E   	chromedriver!GetHandleVerifier [0x7ff76abb7e50+14900]
+E   	chromedriver!(No symbol) [0x7ff76a91d5ad]
+E   	chromedriver!(No symbol) [0x7ff76a977822]
+E   	chromedriver!(No symbol) [0x7ff76a977b2c]
+E   	chromedriver!(No symbol) [0x7ff76a9c7d17]
+E   	chromedriver!(No symbol) [0x7ff76a9c486f]
+E   	chromedriver!(No symbol) [0x7ff76a969df8]
+E   	chromedriver!(No symbol) [0x7ff76a96ace3]
+E   	chromedriver!GetHandleVerifier [0x7ff76aeccc49+3296f9]
+E   	chromedriver!GetHandleVerifier [0x7ff76aec7375+323e25]
+E   	chromedriver!GetHandleVerifier [0x7ff76aeebc82+348732]
+E   	chromedriver!GetHandleVerifier [0x7ff76abd6045+32af5]
+E   	chromedriver!GetHandleVerifier [0x7ff76abdecec+3b79c]
+E   	chromedriver!GetHandleVerifier [0x7ff76abc1bc4+1e674]
+E   	chromedriver!GetHandleVerifier [0x7ff76abc1d54+1e804]
+E   	chromedriver!GetHandleVerifier [0x7ff76aba60e7+2b97]
+E   	KERNEL32!BaseThreadInitThunk [0x7ffe13e0e957+17]
+E   	ntdll!RtlUserThreadStart [0x7ffe14f07c1c+2c]</error></testcase><testcase classname="tests.e2e.test_08_scan_report.TestScanReport" name="test_report_analysis_results_section_visible" time="70.034"><error message="failed on setup with &quot;selenium.common.exceptions.TimeoutException: Message: &#10;Stacktrace:&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abb7de5+14895]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abb7e50+14900]&#10;&#09;chromedriver!(No symbol) [0x7ff76a91d5ad]&#10;&#09;chromedriver!(No symbol) [0x7ff76a977822]&#10;&#09;chromedriver!(No symbol) [0x7ff76a977b2c]&#10;&#09;chromedriver!(No symbol) [0x7ff76a9c7d17]&#10;&#09;chromedriver!(No symbol) [0x7ff76a9c486f]&#10;&#09;chromedriver!(No symbol) [0x7ff76a969df8]&#10;&#09;chromedriver!(No symbol) [0x7ff76a96ace3]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aeccc49+3296f9]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aec7375+323e25]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aeebc82+348732]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abd6045+32af5]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abdecec+3b79c]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abc1bc4+1e674]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abc1d54+1e804]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aba60e7+2b97]&#10;&#09;KERNEL32!BaseThreadInitThunk [0x7ffe13e0e957+17]&#10;&#09;ntdll!RtlUserThreadStart [0x7ffe14f07c1c+2c]&quot;">tests\e2e\test_08_scan_report.py:45: in setup
+    run_full_analysis_and_sync(driver)
+tests\e2e\test_08_scan_report.py:34: in run_full_analysis_and_sync
+    sync_btn = wait.until(EC.element_to_be_clickable(
+C:\Users\USER\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\selenium\webdriver\support\wait.py:121: in until
+    raise TimeoutException(message, screen, stacktrace)
+E   selenium.common.exceptions.TimeoutException: Message: 
+E   Stacktrace:
+E   	chromedriver!GetHandleVerifier [0x7ff76abb7de5+14895]
+E   	chromedriver!GetHandleVerifier [0x7ff76abb7e50+14900]
+E   	chromedriver!(No symbol) [0x7ff76a91d5ad]
+E   	chromedriver!(No symbol) [0x7ff76a977822]
+E   	chromedriver!(No symbol) [0x7ff76a977b2c]
+E   	chromedriver!(No symbol) [0x7ff76a9c7d17]
+E   	chromedriver!(No symbol) [0x7ff76a9c486f]
+E   	chromedriver!(No symbol) [0x7ff76a969df8]
+E   	chromedriver!(No symbol) [0x7ff76a96ace3]
+E   	chromedriver!GetHandleVerifier [0x7ff76aeccc49+3296f9]
+E   	chromedriver!GetHandleVerifier [0x7ff76aec7375+323e25]
+E   	chromedriver!GetHandleVerifier [0x7ff76aeebc82+348732]
+E   	chromedriver!GetHandleVerifier [0x7ff76abd6045+32af5]
+E   	chromedriver!GetHandleVerifier [0x7ff76abdecec+3b79c]
+E   	chromedriver!GetHandleVerifier [0x7ff76abc1bc4+1e674]
+E   	chromedriver!GetHandleVerifier [0x7ff76abc1d54+1e804]
+E   	chromedriver!GetHandleVerifier [0x7ff76aba60e7+2b97]
+E   	KERNEL32!BaseThreadInitThunk [0x7ffe13e0e957+17]
+E   	ntdll!RtlUserThreadStart [0x7ffe14f07c1c+2c]</error></testcase><testcase classname="tests.e2e.test_08_scan_report.TestScanReport" name="test_report_download_button_present" time="70.475"><error message="failed on setup with &quot;selenium.common.exceptions.TimeoutException: Message: &#10;Stacktrace:&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abb7de5+14895]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abb7e50+14900]&#10;&#09;chromedriver!(No symbol) [0x7ff76a91d5ad]&#10;&#09;chromedriver!(No symbol) [0x7ff76a977822]&#10;&#09;chromedriver!(No symbol) [0x7ff76a977b2c]&#10;&#09;chromedriver!(No symbol) [0x7ff76a9c7d17]&#10;&#09;chromedriver!(No symbol) [0x7ff76a9c486f]&#10;&#09;chromedriver!(No symbol) [0x7ff76a969df8]&#10;&#09;chromedriver!(No symbol) [0x7ff76a96ace3]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aeccc49+3296f9]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aec7375+323e25]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aeebc82+348732]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abd6045+32af5]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abdecec+3b79c]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abc1bc4+1e674]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abc1d54+1e804]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aba60e7+2b97]&#10;&#09;KERNEL32!BaseThreadInitThunk [0x7ffe13e0e957+17]&#10;&#09;ntdll!RtlUserThreadStart [0x7ffe14f07c1c+2c]&quot;">tests\e2e\test_08_scan_report.py:45: in setup
+    run_full_analysis_and_sync(driver)
+tests\e2e\test_08_scan_report.py:34: in run_full_analysis_and_sync
+    sync_btn = wait.until(EC.element_to_be_clickable(
+C:\Users\USER\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\selenium\webdriver\support\wait.py:121: in until
+    raise TimeoutException(message, screen, stacktrace)
+E   selenium.common.exceptions.TimeoutException: Message: 
+E   Stacktrace:
+E   	chromedriver!GetHandleVerifier [0x7ff76abb7de5+14895]
+E   	chromedriver!GetHandleVerifier [0x7ff76abb7e50+14900]
+E   	chromedriver!(No symbol) [0x7ff76a91d5ad]
+E   	chromedriver!(No symbol) [0x7ff76a977822]
+E   	chromedriver!(No symbol) [0x7ff76a977b2c]
+E   	chromedriver!(No symbol) [0x7ff76a9c7d17]
+E   	chromedriver!(No symbol) [0x7ff76a9c486f]
+E   	chromedriver!(No symbol) [0x7ff76a969df8]
+E   	chromedriver!(No symbol) [0x7ff76a96ace3]
+E   	chromedriver!GetHandleVerifier [0x7ff76aeccc49+3296f9]
+E   	chromedriver!GetHandleVerifier [0x7ff76aec7375+323e25]
+E   	chromedriver!GetHandleVerifier [0x7ff76aeebc82+348732]
+E   	chromedriver!GetHandleVerifier [0x7ff76abd6045+32af5]
+E   	chromedriver!GetHandleVerifier [0x7ff76abdecec+3b79c]
+E   	chromedriver!GetHandleVerifier [0x7ff76abc1bc4+1e674]
+E   	chromedriver!GetHandleVerifier [0x7ff76abc1d54+1e804]
+E   	chromedriver!GetHandleVerifier [0x7ff76aba60e7+2b97]
+E   	KERNEL32!BaseThreadInitThunk [0x7ffe13e0e957+17]
+E   	ntdll!RtlUserThreadStart [0x7ffe14f07c1c+2c]</error></testcase><testcase classname="tests.e2e.test_08_scan_report.TestScanReport" name="test_return_to_dashboard_button_closes_report" time="71.845"><error message="failed on setup with &quot;selenium.common.exceptions.TimeoutException: Message: &#10;Stacktrace:&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abb7de5+14895]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abb7e50+14900]&#10;&#09;chromedriver!(No symbol) [0x7ff76a91d5ad]&#10;&#09;chromedriver!(No symbol) [0x7ff76a977822]&#10;&#09;chromedriver!(No symbol) [0x7ff76a977b2c]&#10;&#09;chromedriver!(No symbol) [0x7ff76a9c7d17]&#10;&#09;chromedriver!(No symbol) [0x7ff76a9c486f]&#10;&#09;chromedriver!(No symbol) [0x7ff76a969df8]&#10;&#09;chromedriver!(No symbol) [0x7ff76a96ace3]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aeccc49+3296f9]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aec7375+323e25]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aeebc82+348732]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abd6045+32af5]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abdecec+3b79c]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abc1bc4+1e674]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76abc1d54+1e804]&#10;&#09;chromedriver!GetHandleVerifier [0x7ff76aba60e7+2b97]&#10;&#09;KERNEL32!BaseThreadInitThunk [0x7ffe13e0e957+17]&#10;&#09;ntdll!RtlUserThreadStart [0x7ffe14f07c1c+2c]&quot;">tests\e2e\test_08_scan_report.py:45: in setup
+    run_full_analysis_and_sync(driver)
+tests\e2e\test_08_scan_report.py:34: in run_full_analysis_and_sync
+    sync_btn = wait.until(EC.element_to_be_clickable(
+C:\Users\USER\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\selenium\webdriver\support\wait.py:121: in until
+    raise TimeoutException(message, screen, stacktrace)
+E   selenium.common.exceptions.TimeoutException: Message: 
+E   Stacktrace:
+E   	chromedriver!GetHandleVerifier [0x7ff76abb7de5+14895]
+E   	chromedriver!GetHandleVerifier [0x7ff76abb7e50+14900]
+E   	chromedriver!(No symbol) [0x7ff76a91d5ad]
+E   	chromedriver!(No symbol) [0x7ff76a977822]
+E   	chromedriver!(No symbol) [0x7ff76a977b2c]
+E   	chromedriver!(No symbol) [0x7ff76a9c7d17]
+E   	chromedriver!(No symbol) [0x7ff76a9c486f]
+E   	chromedriver!(No symbol) [0x7ff76a969df8]
+E   	chromedriver!(No symbol) [0x7ff76a96ace3]
+E   	chromedriver!GetHandleVerifier [0x7ff76aeccc49+3296f9]
+E   	chromedriver!GetHandleVerifier [0x7ff76aec7375+323e25]
+E   	chromedriver!GetHandleVerifier [0x7ff76aeebc82+348732]
+E   	chromedriver!GetHandleVerifier [0x7ff76abd6045+32af5]
+E   	chromedriver!GetHandleVerifier [0x7ff76abdecec+3b79c]
+E   	chromedriver!GetHandleVerifier [0x7ff76abc1bc4+1e674]
+E   	chromedriver!GetHandleVerifier [0x7ff76abc1d54+1e804]
+E   	chromedriver!GetHandleVerifier [0x7ff76aba60e7+2b97]
+E   	KERNEL32!BaseThreadInitThunk [0x7ffe13e0e957+17]
+E   	ntdll!RtlUserThreadStart [0x7ffe14f07c1c+2c]</error></testcase><testcase classname="tests.e2e.test_09_history.TestPatientHistory" name="test_history_section_title_visible" time="8.477" /><testcase classname="tests.e2e.test_09_history.TestPatientHistory" name="test_history_subtitle_visible" time="8.349" /><testcase classname="tests.e2e.test_09_history.TestPatientHistory" name="test_history_table_patient_id_column_present" time="7.615"><failure message="AssertionError: The 'Patient ID' column header is missing from the Patient History table.&#10;assert 'Patient ID' in '\u2705 Welcome back, Dr. Test Doctor!\nPancreaScan\n\U0001f4ca\nDashboard\n\U0001fa7b\nPatient History\n\U0001f4c8\nAnalytics\n\u2699\ufe0f\nSettings\n\U0001f6aa Log Out\nHello, Dr. Test Doctor\nClinical Portal Diagnostics Suite\nOnline\nPatient History Records\nSecure clinical CT screening scan archives synced from MySQL\nAll Scans (0)\nNormal (0)\nAbnormal (0)\nPATIENT ID PATIENT NAME SCAN RESULT AI CONFIDENCE SYNC TIMESTAMP ACTIONS\nNo medical CT scans match the selected category.'&#10; +  where '\u2705 Welcome back, Dr. Test Doctor!\nPancreaScan\n\U0001f4ca\nDashboard\n\U0001fa7b\nPatient History\n\U0001f4c8\nAnalytics\n\u2699\ufe0f\nSettings\n\U0001f6aa Log Out\nHello, Dr. Test Doctor\nClinical Portal Diagnostics Suite\nOnline\nPatient History Records\nSecure clinical CT screening scan archives synced from MySQL\nAll Scans (0)\nNormal (0)\nAbnormal (0)\nPATIENT ID PATIENT NAME SCAN RESULT AI CONFIDENCE SYNC TIMESTAMP ACTIONS\nNo medical CT scans match the selected category.' = &lt;test_09_history.TestPatientHistory object at 0x0000027C7F1A96E0&gt;.body">tests\e2e\test_09_history.py:39: in test_history_table_patient_id_column_present
+    assert "Patient ID" in self.body, \
+E   AssertionError: The 'Patient ID' column header is missing from the Patient History table.
+E   assert 'Patient ID' in '\u2705 Welcome back, Dr. Test Doctor!\nPancreaScan\n\U0001f4ca\nDashboard\n\U0001fa7b\nPatient History\n\U0001f4c8\nAnalytics\n\u2699\ufe0f\nSettings\n\U0001f6aa Log Out\nHello, Dr. Test Doctor\nClinical Portal Diagnostics Suite\nOnline\nPatient History Records\nSecure clinical CT screening scan archives synced from MySQL\nAll Scans (0)\nNormal (0)\nAbnormal (0)\nPATIENT ID PATIENT NAME SCAN RESULT AI CONFIDENCE SYNC TIMESTAMP ACTIONS\nNo medical CT scans match the selected category.'
+E    +  where '\u2705 Welcome back, Dr. Test Doctor!\nPancreaScan\n\U0001f4ca\nDashboard\n\U0001fa7b\nPatient History\n\U0001f4c8\nAnalytics\n\u2699\ufe0f\nSettings\n\U0001f6aa Log Out\nHello, Dr. Test Doctor\nClinical Portal Diagnostics Suite\nOnline\nPatient History Records\nSecure clinical CT screening scan archives synced from MySQL\nAll Scans (0)\nNormal (0)\nAbnormal (0)\nPATIENT ID PATIENT NAME SCAN RESULT AI CONFIDENCE SYNC TIMESTAMP ACTIONS\nNo medical CT scans match the selected category.' = &lt;test_09_history.TestPatientHistory object at 0x0000027C7F1A96E0&gt;.body</failure></testcase><testcase classname="tests.e2e.test_09_history.TestPatientHistory" name="test_history_table_scan_result_column_present" time="7.692"><failure message="AssertionError: The 'Scan Result' column header is missing from the Patient History table.&#10;assert 'Scan Result' in '\u2705 Welcome back, Dr. Test Doctor!\nPancreaScan\n\U0001f4ca\nDashboard\n\U0001fa7b\nPatient History\n\U0001f4c8\nAnalytics\n\u2699\ufe0f\nSettings\n\U0001f6aa Log Out\nHello, Dr. Test Doctor\nClinical Portal Diagnostics Suite\nOnline\nPatient History Records\nSecure clinical CT screening scan archives synced from MySQL\nAll Scans (0)\nNormal (0)\nAbnormal (0)\nPATIENT ID PATIENT NAME SCAN RESULT AI CONFIDENCE SYNC TIMESTAMP ACTIONS\nNo medical CT scans match the selected category.'&#10; +  where '\u2705 Welcome back, Dr. Test Doctor!\nPancreaScan\n\U0001f4ca\nDashboard\n\U0001fa7b\nPatient History\n\U0001f4c8\nAnalytics\n\u2699\ufe0f\nSettings\n\U0001f6aa Log Out\nHello, Dr. Test Doctor\nClinical Portal Diagnostics Suite\nOnline\nPatient History Records\nSecure clinical CT screening scan archives synced from MySQL\nAll Scans (0)\nNormal (0)\nAbnormal (0)\nPATIENT ID PATIENT NAME SCAN RESULT AI CONFIDENCE SYNC TIMESTAMP ACTIONS\nNo medical CT scans match the selected category.' = &lt;test_09_history.TestPatientHistory object at 0x0000027C7F1A9940&gt;.body">tests\e2e\test_09_history.py:45: in test_history_table_scan_result_column_present
+    assert "Scan Result" in self.body, \
+E   AssertionError: The 'Scan Result' column header is missing from the Patient History table.
+E   assert 'Scan Result' in '\u2705 Welcome back, Dr. Test Doctor!\nPancreaScan\n\U0001f4ca\nDashboard\n\U0001fa7b\nPatient History\n\U0001f4c8\nAnalytics\n\u2699\ufe0f\nSettings\n\U0001f6aa Log Out\nHello, Dr. Test Doctor\nClinical Portal Diagnostics Suite\nOnline\nPatient History Records\nSecure clinical CT screening scan archives synced from MySQL\nAll Scans (0)\nNormal (0)\nAbnormal (0)\nPATIENT ID PATIENT NAME SCAN RESULT AI CONFIDENCE SYNC TIMESTAMP ACTIONS\nNo medical CT scans match the selected category.'
+E    +  where '\u2705 Welcome back, Dr. Test Doctor!\nPancreaScan\n\U0001f4ca\nDashboard\n\U0001fa7b\nPatient History\n\U0001f4c8\nAnalytics\n\u2699\ufe0f\nSettings\n\U0001f6aa Log Out\nHello, Dr. Test Doctor\nClinical Portal Diagnostics Suite\nOnline\nPatient History Records\nSecure clinical CT screening scan archives synced from MySQL\nAll Scans (0)\nNormal (0)\nAbnormal (0)\nPATIENT ID PATIENT NAME SCAN RESULT AI CONFIDENCE SYNC TIMESTAMP ACTIONS\nNo medical CT scans match the selected category.' = &lt;test_09_history.TestPatientHistory object at 0x0000027C7F1A9940&gt;.body</failure></testcase><testcase classname="tests.e2e.test_09_history.TestPatientHistory" name="test_history_table_ai_confidence_column_present" time="7.633"><failure message="AssertionError: The 'AI Confidence' column header is missing from the Patient History table.&#10;assert 'AI Confidence' in '\u2705 Welcome back, Dr. Test Doctor!\nPancreaScan\n\U0001f4ca\nDashboard\n\U0001fa7b\nPatient History\n\U0001f4c8\nAnalytics\n\u2699\ufe0f\nSettings\n\U0001f6aa Log Out\nHello, Dr. Test Doctor\nClinical Portal Diagnostics Suite\nOnline\nPatient History Records\nSecure clinical CT screening scan archives synced from MySQL\nAll Scans (0)\nNormal (0)\nAbnormal (0)\nPATIENT ID PATIENT NAME SCAN RESULT AI CONFIDENCE SYNC TIMESTAMP ACTIONS\nNo medical CT scans match the selected category.'&#10; +  where '\u2705 Welcome back, Dr. Test Doctor!\nPancreaScan\n\U0001f4ca\nDashboard\n\U0001fa7b\nPatient History\n\U0001f4c8\nAnalytics\n\u2699\ufe0f\nSettings\n\U0001f6aa Log Out\nHello, Dr. Test Doctor\nClinical Portal Diagnostics Suite\nOnline\nPatient History Records\nSecure clinical CT screening scan archives synced from MySQL\nAll Scans (0)\nNormal (0)\nAbnormal (0)\nPATIENT ID PATIENT NAME SCAN RESULT AI CONFIDENCE SYNC TIMESTAMP ACTIONS\nNo medical CT scans match the selected category.' = &lt;test_09_history.TestPatientHistory object at 0x0000027C7F18E7B0&gt;.body">tests\e2e\test_09_history.py:51: in test_history_table_ai_confidence_column_present
+    assert "AI Confidence" in self.body, \
+E   AssertionError: The 'AI Confidence' column header is missing from the Patient History table.
+E   assert 'AI Confidence' in '\u2705 Welcome back, Dr. Test Doctor!\nPancreaScan\n\U0001f4ca\nDashboard\n\U0001fa7b\nPatient History\n\U0001f4c8\nAnalytics\n\u2699\ufe0f\nSettings\n\U0001f6aa Log Out\nHello, Dr. Test Doctor\nClinical Portal Diagnostics Suite\nOnline\nPatient History Records\nSecure clinical CT screening scan archives synced from MySQL\nAll Scans (0)\nNormal (0)\nAbnormal (0)\nPATIENT ID PATIENT NAME SCAN RESULT AI CONFIDENCE SYNC TIMESTAMP ACTIONS\nNo medical CT scans match the selected category.'
+E    +  where '\u2705 Welcome back, Dr. Test Doctor!\nPancreaScan\n\U0001f4ca\nDashboard\n\U0001fa7b\nPatient History\n\U0001f4c8\nAnalytics\n\u2699\ufe0f\nSettings\n\U0001f6aa Log Out\nHello, Dr. Test Doctor\nClinical Portal Diagnostics Suite\nOnline\nPatient History Records\nSecure clinical CT screening scan archives synced from MySQL\nAll Scans (0)\nNormal (0)\nAbnormal (0)\nPATIENT ID PATIENT NAME SCAN RESULT AI CONFIDENCE SYNC TIMESTAMP ACTIONS\nNo medical CT scans match the selected category.' = &lt;test_09_history.TestPatientHistory object at 0x0000027C7F18E7B0&gt;.body</failure></testcase><testcase classname="tests.e2e.test_09_history.TestPatientHistory" name="test_history_all_scans_filter_button_present" time="6.966" /><testcase classname="tests.e2e.test_09_history.TestPatientHistory" name="test_history_normal_filter_button_present" time="6.998" /><testcase classname="tests.e2e.test_09_history.TestPatientHistory" name="test_history_abnormal_filter_button_present" time="7.729" /><testcase classname="tests.e2e.test_09_history.TestPatientHistory" name="test_history_table_or_empty_state_rendered" time="7.866" /><testcase classname="tests.e2e.test_10_analytics.TestAnalyticsTab" name="test_analytics_section_heading_visible" time="7.832" /><testcase classname="tests.e2e.test_10_analytics.TestAnalyticsTab" name="test_analytics_subtitle_visible" time="7.605" /><testcase classname="tests.e2e.test_10_analytics.TestAnalyticsTab" name="test_scan_summary_overview_heading_visible" time="7.738" /><testcase classname="tests.e2e.test_10_analytics.TestAnalyticsTab" name="test_normal_scans_metric_card_visible" time="7.620"><failure message="AssertionError: The 'Normal Scans' metric card is not visible in the Analytics tab.&#10;assert 'Normal Scans' in '\u2705 Welcome back, Dr. Test Doctor!\nPancreaScan\n\U0001f4ca\nDashboard\n\U0001fa7b\nPatient History\n\U0001f4c8\nAnalytics\n\u2699\ufe0f\nSettings\n\U0001f6aa Log Out\nHello, Dr. Test Doctor\nClinical Portal Diagnostics Suite\nOnline\n\U0001f916 Neural Analytics &amp; CT Scan Ratios\nComprehensive specimen distribution and deep-learning metrics diagnostics\n0\nNO SCANS\nScan Summary Overview\nNORMAL SCANS\n0\n0.0% Ratio\nABNORMAL SCANS\n0\n0.0% Ratio\n\U0001f50d\nCLINICAL INSIGHT\nNo scan records recorded under this account. Please perform a new pancreas scan analysis to populate analytics charts.'&#10; +  where '\u2705 Welcome back, Dr. Test Doctor!\nPancreaScan\n\U0001f4ca\nDashboard\n\U0001fa7b\nPatient History\n\U0001f4c8\nAnalytics\n\u2699\ufe0f\nSettings\n\U0001f6aa Log Out\nHello, Dr. Test Doctor\nClinical Portal Diagnostics Suite\nOnline\n\U0001f916 Neural Analytics &amp; CT Scan Ratios\nComprehensive specimen distribution and deep-learning metrics diagnostics\n0\nNO SCANS\nScan Summary Overview\nNORMAL SCANS\n0\n0.0% Ratio\nABNORMAL SCANS\n0\n0.0% Ratio\n\U0001f50d\nCLINICAL INSIGHT\nNo scan records recorded under this account. Please perform a new pancreas scan analysis to populate analytics charts.' = &lt;test_10_analytics.TestAnalyticsTab object at 0x0000027C7F1A9A70&gt;.body">tests\e2e\test_10_analytics.py:44: in test_normal_scans_metric_card_visible
+    assert "Normal Scans" in self.body, \
+E   AssertionError: The 'Normal Scans' metric card is not visible in the Analytics tab.
+E   assert 'Normal Scans' in '\u2705 Welcome back, Dr. Test Doctor!\nPancreaScan\n\U0001f4ca\nDashboard\n\U0001fa7b\nPatient History\n\U0001f4c8\nAnalytics\n\u2699\ufe0f\nSettings\n\U0001f6aa Log Out\nHello, Dr. Test Doctor\nClinical Portal Diagnostics Suite\nOnline\n\U0001f916 Neural Analytics &amp; CT Scan Ratios\nComprehensive specimen distribution and deep-learning metrics diagnostics\n0\nNO SCANS\nScan Summary Overview\nNORMAL SCANS\n0\n0.0% Ratio\nABNORMAL SCANS\n0\n0.0% Ratio\n\U0001f50d\nCLINICAL INSIGHT\nNo scan records recorded under this account. Please perform a new pancreas scan analysis to populate analytics charts.'
+E    +  where '\u2705 Welcome back, Dr. Test Doctor!\nPancreaScan\n\U0001f4ca\nDashboard\n\U0001fa7b\nPatient History\n\U0001f4c8\nAnalytics\n\u2699\ufe0f\nSettings\n\U0001f6aa Log Out\nHello, Dr. Test Doctor\nClinical Portal Diagnostics Suite\nOnline\n\U0001f916 Neural Analytics &amp; CT Scan Ratios\nComprehensive specimen distribution and deep-learning metrics diagnostics\n0\nNO SCANS\nScan Summary Overview\nNORMAL SCANS\n0\n0.0% Ratio\nABNORMAL SCANS\n0\n0.0% Ratio\n\U0001f50d\nCLINICAL INSIGHT\nNo scan records recorded under this account. Please perform a new pancreas scan analysis to populate analytics charts.' = &lt;test_10_analytics.TestAnalyticsTab object at 0x0000027C7F1A9A70&gt;.body</failure></testcase><testcase classname="tests.e2e.test_10_analytics.TestAnalyticsTab" name="test_abnormal_scans_metric_card_visible" time="7.881"><failure message="AssertionError: The 'Abnormal Scans' metric card is not visible in the Analytics tab.&#10;assert 'Abnormal Scans' in '\u2705 Welcome back, Dr. Test Doctor!\nPancreaScan\n\U0001f4ca\nDashboard\n\U0001fa7b\nPatient History\n\U0001f4c8\nAnalytics\n\u2699\ufe0f\nSettings\n\U0001f6aa Log Out\nHello, Dr. Test Doctor\nClinical Portal Diagnostics Suite\nOnline\n\U0001f916 Neural Analytics &amp; CT Scan Ratios\nComprehensive specimen distribution and deep-learning metrics diagnostics\n0\nNO SCANS\nScan Summary Overview\nNORMAL SCANS\n0\n0.0% Ratio\nABNORMAL SCANS\n0\n0.0% Ratio\n\U0001f50d\nCLINICAL INSIGHT\nNo scan records recorded under this account. Please perform a new pancreas scan analysis to populate analytics charts.'&#10; +  where '\u2705 Welcome back, Dr. Test Doctor!\nPancreaScan\n\U0001f4ca\nDashboard\n\U0001fa7b\nPatient History\n\U0001f4c8\nAnalytics\n\u2699\ufe0f\nSettings\n\U0001f6aa Log Out\nHello, Dr. Test Doctor\nClinical Portal Diagnostics Suite\nOnline\n\U0001f916 Neural Analytics &amp; CT Scan Ratios\nComprehensive specimen distribution and deep-learning metrics diagnostics\n0\nNO SCANS\nScan Summary Overview\nNORMAL SCANS\n0\n0.0% Ratio\nABNORMAL SCANS\n0\n0.0% Ratio\n\U0001f50d\nCLINICAL INSIGHT\nNo scan records recorded under this account. Please perform a new pancreas scan analysis to populate analytics charts.' = &lt;test_10_analytics.TestAnalyticsTab object at 0x0000027C7F18EF90&gt;.body">tests\e2e\test_10_analytics.py:50: in test_abnormal_scans_metric_card_visible
+    assert "Abnormal Scans" in self.body, \
+E   AssertionError: The 'Abnormal Scans' metric card is not visible in the Analytics tab.
+E   assert 'Abnormal Scans' in '\u2705 Welcome back, Dr. Test Doctor!\nPancreaScan\n\U0001f4ca\nDashboard\n\U0001fa7b\nPatient History\n\U0001f4c8\nAnalytics\n\u2699\ufe0f\nSettings\n\U0001f6aa Log Out\nHello, Dr. Test Doctor\nClinical Portal Diagnostics Suite\nOnline\n\U0001f916 Neural Analytics &amp; CT Scan Ratios\nComprehensive specimen distribution and deep-learning metrics diagnostics\n0\nNO SCANS\nScan Summary Overview\nNORMAL SCANS\n0\n0.0% Ratio\nABNORMAL SCANS\n0\n0.0% Ratio\n\U0001f50d\nCLINICAL INSIGHT\nNo scan records recorded under this account. Please perform a new pancreas scan analysis to populate analytics charts.'
+E    +  where '\u2705 Welcome back, Dr. Test Doctor!\nPancreaScan\n\U0001f4ca\nDashboard\n\U0001fa7b\nPatient History\n\U0001f4c8\nAnalytics\n\u2699\ufe0f\nSettings\n\U0001f6aa Log Out\nHello, Dr. Test Doctor\nClinical Portal Diagnostics Suite\nOnline\n\U0001f916 Neural Analytics &amp; CT Scan Ratios\nComprehensive specimen distribution and deep-learning metrics diagnostics\n0\nNO SCANS\nScan Summary Overview\nNORMAL SCANS\n0\n0.0% Ratio\nABNORMAL SCANS\n0\n0.0% Ratio\n\U0001f50d\nCLINICAL INSIGHT\nNo scan records recorded under this account. Please perform a new pancreas scan analysis to populate analytics charts.' = &lt;test_10_analytics.TestAnalyticsTab object at 0x0000027C7F18EF90&gt;.body</failure></testcase><testcase classname="tests.e2e.test_10_analytics.TestAnalyticsTab" name="test_donut_chart_svg_element_rendered" time="7.696" /><testcase classname="tests.e2e.test_10_analytics.TestAnalyticsTab" name="test_ratio_percentage_text_visible" time="8.166" /><testcase classname="tests.e2e.test_10_analytics.TestAnalyticsTab" name="test_analytics_normal_filter_interaction" time="9.158" /><testcase classname="tests.e2e.test_11_settings.TestSettingsTab" name="test_settings_clinical_profile_section_visible" time="8.468" /><testcase classname="tests.e2e.test_11_settings.TestSettingsTab" name="test_settings_shows_doctor_name" time="7.993" /><testcase classname="tests.e2e.test_11_settings.TestSettingsTab" name="test_settings_shows_user_email" time="7.577" /><testcase classname="tests.e2e.test_11_settings.TestSettingsTab" name="test_federated_ai_model_section_visible" time="8.459" /><testcase classname="tests.e2e.test_11_settings.TestSettingsTab" name="test_settings_shows_yolov8_engine_name" time="7.939" /><testcase classname="tests.e2e.test_11_settings.TestSettingsTab" name="test_check_model_update_button_present" time="8.640" /><testcase classname="tests.e2e.test_11_settings.TestSettingsTab" name="test_sync_training_data_button_present" time="7.039" /><testcase classname="tests.e2e.test_11_settings.TestSettingsTab" name="test_secure_logout_button_in_settings" time="6.470" /><testcase classname="tests.e2e.test_12_logout.TestLogout" name="test_logout_button_visible_in_sidebar" time="5.090" /><testcase classname="tests.e2e.test_12_logout.TestLogout" name="test_sidebar_logout_click_navigates_to_login" time="7.498" /><testcase classname="tests.e2e.test_12_logout.TestLogout" name="test_login_form_is_visible_after_logout" time="6.946" /><testcase classname="tests.e2e.test_12_logout.TestLogout" name="test_dashboard_not_visible_after_logout" time="11.205" /><testcase classname="tests.e2e.test_12_logout.TestLogout" name="test_settings_secure_logout_navigates_to_login" time="9.076" /></testsuite></testsuites>
