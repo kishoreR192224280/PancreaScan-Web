@@ -57,8 +57,15 @@ export default defineConfig({
   ],
   server: {
     proxy: {
+      // Proxy uploaded scan images served by XAMPP Apache
+      '/api/uploads': {
+        target: 'http://localhost/PHP_Backend',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
+      },
+      // Proxy all other PHP API calls (auth.php, sync.php, fl.php)
       '/api': {
-        target: 'http://14.139.187.229:8081/oct/pancreas',
+        target: 'http://localhost/PHP_Backend',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ''),
       },
